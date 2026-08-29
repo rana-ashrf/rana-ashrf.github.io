@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #e8e9ee;
+  --card-bg: #ffffff;
+  --ink: #0d0d10;
+  --text-strong: #17171c;
+  --text: #6b6375;
+  --muted: #7a7f8d;
+  --border: #e7e9ee;
+  --border-strong: #d4d7de;
+  --badge-bg: #f1f2f5;
+  --nav-tag: #a0a4ad;
+  --link-hover: #555;
+  --glow-green: #22c55e;
+  --card-shadow: 0 24px 60px -30px rgba(0, 0, 0, 0.25);
+
+  --sans: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  font: 16px/1.45 var(--sans);
+  color-scheme: light;
+  color: var(--text);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  background-image: radial-gradient(
+      rgba(0, 0, 0, 0.035) 1.5px,
+      transparent 1.5px
+    ),
+    radial-gradient(rgba(0, 0, 0, 0.025) 1px, transparent 1px);
+  background-size: 26px 26px, 52px 52px;
+  background-position: 0 0, 13px 13px;
+  min-height: 100svh;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+a {
+  color: inherit;
+}
